@@ -1,0 +1,26 @@
+package com.android.developper.createandroidlibrary
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Text
+import androidx.compose.ui.Modifier
+import com.android.developper.createandroidlibrary.ui.theme.CreateAndroidLibraryTheme
+import com.android.developper.image_preview.ImagePreview
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            CreateAndroidLibraryTheme {
+                Box(modifier = Modifier.fillMaxSize()) {
+                }
+            }
+        }
+    }
+}
+
